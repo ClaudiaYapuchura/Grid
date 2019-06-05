@@ -28,9 +28,26 @@ header img{
     width: auto;
 }
 nav{
+    align-items: center;
     grid-area: sasuke;
-    background-color:blue; 
+    background-color: #fe7a35;
+    justify-content: space-around;
+    display: flex;
 }
+
+nav a:hover{
+    color: white;
+    font-weight: bolder;
+}
+
+nav a{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
 section{
     grid-area: sakura;
     background-color:green;
