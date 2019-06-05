@@ -6,12 +6,15 @@ body{
                          'sakura sakura kakashi kakashi'
                          'minato minato minato minato';
     grid-template-rows: 20vh 15vh 50vh 30vh;
+    grid-template-columns: 25% 25% 25% 24%;
     background-color: black;
-    grid-gap: 10px;
+    grid-gap: 5px;
 }
 header{
     grid-area: naruto;
-    background-color: red;    
+    background-color: red;  
+    display: flex;
+    justify-content: space-around;  
 }
 
 header div{
@@ -51,7 +54,20 @@ nav a{
 section{
     grid-area: sakura;
     background-color:green;
+    display: flex;
+    justify-content: center;
+    grid-area: 
 }
+
+section img{
+    width: 100px;
+    height: 100
+}
+
+section img :hover{
+    width: 390px;;
+}
+
 aside{
     grid-area: kakashi;
     background-color:yellow;
