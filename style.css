@@ -6,36 +6,46 @@ body{
                          'sakura sakura kakashi kakashi'
                          'minato minato minato minato';
     grid-template-rows: 20vh 15vh 50vh 30vh;
-    grid-template-columns: 25% 25% 25% 24%;
-    background-color: black;
-    grid-gap: 5px;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color:#093b7c;
 }
+
 header{
+    align-items: center;
     grid-area: naruto;
-    background-color: red;  
+    background-color: black;  
     display: flex;
-    justify-content: space-around;  
+    justify-content: center;  
 }
 
 header div{
-    background-color: black;
+    align-items: center;
+    background-color:#a5a8b1;
     border-radius: 10px;
     display: flex;
     justify-content: center;
+    height: 100px;
     width: 60%;
 }
-header img{
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    width: auto;
+header div img{
+    height: 100px;
+    width: 100px;
 }
+
 nav{
     align-items: center;
     grid-area: sasuke;
-    background-color: #fe7a35;
+    background-color: #f67834;
     justify-content: space-around;
     display: flex;
+}
+
+nav a{
+    color: red;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase; 
 }
 
 nav a:hover{
@@ -43,36 +53,57 @@ nav a:hover{
     font-weight: bolder;
 }
 
-nav a{
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 800;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
 section{
+    align-items: center;
     grid-area: sakura;
-    background-color:green;
+    background-color: #245fac;
     display: flex;
     justify-content: center;
-    grid-area: 
 }
 
 section img{
-    width: 100px;
-    height: 100
+    border-radius: 100%;
+    width: 300px;
 }
 
-section img :hover{
-    width: 390px;;
+section img:hover{
+    width: 310px;
 }
 
 aside{
+    align-items: center;
     grid-area: kakashi;
-    background-color:yellow;
+    background-color:#093b7c;
+    display: flex;
+    padding: 0 30px;
+    text-align: center;
 }
+
+aside p{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+aside p span{
+    font-style: italic;
+    color: #f67834;
+}
+
 footer{
     grid-area: minato;
-    background-color: purple;
+    background-color: rgb(161, 39, 161);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div{
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div img{
+    width: 30px;
 }
